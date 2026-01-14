@@ -42,12 +42,18 @@ list(APPEND satellites_python_files
     doppler_correction_python.cc
     encode_rs_python.cc
     fixedlen_to_pdu_python.cc
+    frame_counter_python.cc
+    kurtosis_python.cc
+    level_to_message_python.cc
     lilacsat1_demux_python.cc
     manchester_sync_python.cc
     matrix_deinterleaver_soft_python.cc
+    message_counter_python.cc
+    nanocom_golay_decode_length_python.cc
     nrzi_decode_python.cc
     nrzi_encode_python.cc
     nusat_decoder_python.cc
+    packet_csma_python.cc
     pdu_add_meta_python.cc
     pdu_head_tail_python.cc
     pdu_length_filter_python.cc
@@ -55,7 +61,9 @@ list(APPEND satellites_python_files
     phase_unwrap_python.cc
     python_bindings.cc
     selector_python.cc
+    time_dependent_delay_python.cc
     u482c_decode_python.cc
+    u482c_encode_python.cc
     varlen_packet_framer_python.cc
     varlen_packet_tagger_python.cc
     viterbi_decoder_python.cc

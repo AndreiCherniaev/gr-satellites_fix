@@ -6,6 +6,90 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [5.9.0] - 2025-12-14
+
+### Added
+
+- Kurtosis block
+- Level to Message block
+- Message Counter block
+- NanoCom Golay Decode Length block
+- Packet CSMA block
+- Support for 239Alferov
+- Support for BEE-1000
+- Support for BOTAN
+- Support for CroCube
+- Support for FORESAIL-1P
+- Support for Geoscan-1,2,3,4,5,6
+- Support for HCT-SAT2
+- Support for HUNITY
+- Support for HYDRA-T and HYDRA-W
+- Support for INHA-RoSAT
+- Support for INNOCUBE
+- Support for InnoSat3 and InnoSat16
+- Support for JACK-001 and JACK-003
+- Support for K-HERO
+- Support for PHI-1
+- Support for RSP-03
+- Support for SNUGLITE-III DURI and HANA
+- Support for SPIRONE
+- Support for UND ROADS 1 and 2
+
+### Changed
+
+- Added new CCSDS framing to ERMINAZ-1U SatYAML
+- Added packet length tat support to Fixed Length to PDU block
+- Deprecate varlen_packet_framer and varlen_packet_tagger
+- Refactored timezone handling
+- Removed some unused imports and code duplication in telemetry parsers
+- TUBIN telemetry server URL
+- Update HADES-R NORAD ID
+- Update WS-1 NORAD ID
+- Upgrade to C++17
+
+### Fixed
+
+- MOBITEX deframer: drop frame if none of the datablocks is correct
+
+### Removed
+
+- Removed deprecated fixedlen_tagger block
+- sync_to_pdu*.grc files
+
+## [5.8.0], [4.15.0], [3.22.0] - 2025-08-01
+
+### Added
+
+- Added callsign to deframer options
+- Basic support for SigMF input
+- CSP Address Filter block
+- CSP ZMQ blocks
+- Frame counter block
+- Mobitex-NX deframer
+- Support for JINJUSAT-1B
+- Support for Hex20 Nila
+- Support for NUSHSAT-1
+- Support for TEVEL2 satellites
+- Telemetry decoder for TUBiX20 (TUBIN)
+- Time-dependent delay block
+- Time synchronization tag to Doppler correction block
+- U482C encoder block
+- Uplink argument to tle_to_doppler_file.py example
+
+### Fixed
+
+- Callsign '-' handling in Check AX.25 Address
+- Packet size bug in AX100 deframer
+- pybind11 bug in swap_header
+- Timezone handling in PDU to KISS
+
+### Changed
+
+- Added callsign in SatYAML to BEESAT-1,-9, TUBIN, NanoFF-A,-B, and TechnoSat
+- Improved version printout in gr_satellites CLI app
+- Updated AX.25 packet radio examples
+- Use GNU Radio crc_check in GNU Radio >= 3.10
+
 ## [5.7.0], [4.14.0], [3.21.0] - 2025-02-10
 
 ### Added
@@ -552,7 +636,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SatYAML file for UPMSat 2
 - Support for NASA-DSN convention in CCSDS concatenated frames
 - Support for TRISAT
-- TCP KISS server and ZMQ PUB socket to send decoded frames	
+- TCP KISS server and ZMQ PUB socket to send decoded frames
 - CSP fragmentation flag
 - SatYAML file for ION-MK01
 
@@ -799,7 +883,9 @@ Large refactor release bringing new functionality and improvements. This is an o
 ## [1.0.0] - 2018-08-02
 First gr-satellites release using semantic versioning
 
-[Unreleased]: https://github.com/daniestevez/gr-satellites/compare/v5.7.0...main
+[Unreleased]: https://github.com/daniestevez/gr-satellites/compare/v5.9.0...main
+[5.9.0]: https://github.com/daniestevez/gr-satellites/compare/v5.8.0...v5.9.0
+[5.8.0]: https://github.com/daniestevez/gr-satellites/compare/v5.7.0...v5.8.0
 [5.7.0]: https://github.com/daniestevez/gr-satellites/compare/v5.6.0...v5.7.0
 [5.6.0]: https://github.com/daniestevez/gr-satellites/compare/v5.5.0...v5.6.0
 [5.5.0]: https://github.com/daniestevez/gr-satellites/compare/v5.4.0...v5.5.0
@@ -809,6 +895,7 @@ First gr-satellites release using semantic versioning
 [5.1.1]: https://github.com/daniestevez/gr-satellites/compare/v5.1.0...v5.1.1
 [5.1.0]: https://github.com/daniestevez/gr-satellites/compare/v5.0.0...v5.1.0
 [5.0.0]: https://github.com/daniestevez/gr-satellites/compare/v4.6.0...v5.0.0
+[4.15.0]: https://github.com/daniestevez/gr-satellites/compare/v4.14.0...v4.15.0
 [4.14.0]: https://github.com/daniestevez/gr-satellites/compare/v4.13.0...v4.14.0
 [4.13.0]: https://github.com/daniestevez/gr-satellites/compare/v4.12.0...v4.13.0
 [4.12.0]: https://github.com/daniestevez/gr-satellites/compare/v4.11.0...v4.12.0
@@ -827,6 +914,7 @@ First gr-satellites release using semantic versioning
 [4.1.0]: https://github.com/daniestevez/gr-satellites/compare/v4.0.0...v4.1.0
 [4.0.0]: https://github.com/daniestevez/gr-satellites/compare/v4.0.0-rc1...v4.0.0
 [4.0.0-rc1]: https://github.com/daniestevez/gr-satellites/compare/v3.7.0...v4.0.0-rc1
+[3.22.0]: https://github.com/daniestevez/gr-satellites/compare/v3.21.0...v3.22.0
 [3.21.0]: https://github.com/daniestevez/gr-satellites/compare/v3.20.0...v3.21.0
 [3.20.0]: https://github.com/daniestevez/gr-satellites/compare/v3.19.0...v3.20.0
 [3.19.0]: https://github.com/daniestevez/gr-satellites/compare/v3.18.0...v3.19.0

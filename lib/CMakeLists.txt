@@ -56,13 +56,19 @@ list(APPEND satellites_sources
     doppler_correction_impl.cc
     encode_rs_impl.cc
     fixedlen_to_pdu_impl.cc
+    frame_counter_impl.cc
     golay24.c
+    kurtosis_impl.cc
+    level_to_message_impl.cc
     lilacsat1_demux_impl.cc
     manchester_sync_impl.cc
     matrix_deinterleaver_soft_impl.cc
+    message_counter_impl.cc
+    nanocom_golay_decode_length_impl.cc
     nrzi_decode_impl.cc
     nrzi_encode_impl.cc
     nusat_decoder_impl.cc
+    packet_csma_impl.cc
     pdu_add_meta_impl.cc
     pdu_head_tail_impl.cc
     pdu_length_filter_impl.cc
@@ -70,7 +76,9 @@ list(APPEND satellites_sources
     phase_unwrap_impl.cc
     randomizer.c
     selector_impl.cc
+    time_dependent_delay_impl.cc
     u482c_decode_impl.cc
+    u482c_encode_impl.cc
     varlen_packet_framer_impl.cc
     varlen_packet_tagger_impl.cc
     viterbi.c

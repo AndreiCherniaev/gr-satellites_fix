@@ -43,6 +43,9 @@ install(FILES
     satellites_costas_loop_8apsk_cc.block.yml
     satellites_crc_append.block.yml
     satellites_crc_check.block.yml
+    satellites_csp_address_filter.block.yml
+    satellites_csp_zmq_pub.block.yml
+    satellites_csp_zmq_sub.block.yml
     satellites_decode_ra_code.block.yml
     satellites_decode_rs.block.yml
     satellites_decode_rs_ccsds.block.yml
@@ -55,24 +58,29 @@ install(FILES
     satellites_encode_rs_vector.block.yml
     satellites_eseo_line_decoder.block.yml
     satellites_eseo_packet_crop.block.yml
-    satellites_fixedlen_tagger.block.yml
     satellites_fixedlen_to_pdu.block.yml
+    satellites_frame_counter.block.yml
     satellites_funcube_submit.block.yml
     satellites_hdlc_deframer.block.yml
     satellites_hdlc_framer.block.yml
     satellites_k2sat_deframer.block.yml
     satellites_kiss_to_pdu.block.yml
     satellites_ks1q_header_remover.block.yml
+    satellites_kurtosis.block.yml
+    satellites_level_to_message.block.yml
     satellites_lilacsat1_demux.block.yml
     satellites_lilacsat1_gps_kml.block.yml
     satellites_manchester_sync.block.yml
     satellites_matrix_deinterleaver_soft.block.yml
+    satellites_message_counter.block.yml
+    satellites_nanocom_golay_decode_length.block.yml
     satellites_ngham_check_crc.block.yml
     satellites_ngham_packet_crop.block.yml
     satellites_ngham_remove_padding.block.yml
     satellites_nrzi_decode.block.yml
     satellites_nrzi_encode.block.yml
     satellites_nusat_decoder.block.yml
+    satellites_packet_csma.block.yml
     satellites_pdu_add_meta.block.yml
     satellites_pdu_head_tail.block.yml
     satellites_pdu_length_filter.block.yml
@@ -94,7 +102,9 @@ install(FILES
     satellites_swiatowid_packet_split.block.yml
     satellites_sx12xx_check_crc.block.yml
     satellites_sx12xx_packet_crop.block.yml
+    satellites_time_dependent_delay.block.yml
     satellites_u482c_decode.block.yml
+    satellites_u482c_encode.block.yml
     satellites_varlen_packet_framer.block.yml
     satellites_varlen_packet_tagger.block.yml
     satellites_viterbi_decoder.block.yml
